@@ -1,0 +1,52 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   10.18.10.3412
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.186 seconds
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\alavaia\Documents\Unity\US Map game\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 12.605421 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 26.031900 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 2.965536 ms (FindLiveObjects: 0.069682 ms CreateObjectMapping: 0.059958 ms MarkObjects: 1.729086 ms  DeleteObjects: 1.099247 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.022794 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 297.
+Total: 0.776765 ms (FindLiveObjects: 0.082646 ms CreateObjectMapping: 0.081565 ms MarkObjects: 0.573121 ms  DeleteObjects: 0.032950 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.474125 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 653.
+Total: 2.055889 ms (FindLiveObjects: 0.191220 ms CreateObjectMapping: 0.207965 ms MarkObjects: 1.580539 ms  DeleteObjects: 0.065900 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PointerController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 77b4 -> priority: 1 
