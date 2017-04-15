@@ -10,14 +10,14 @@ public class PointerController : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
 
-	public static Text debugText;
+	//public static Text debugText;
 	public static GameObject collisionObject;
 
 
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
-		debugText = GameObject.Find("DebugText").GetComponent<Text>();
+		//debugText = GameObject.Find("DebugText").GetComponent<Text>();
 		collisionObject = null;
 	}
 
