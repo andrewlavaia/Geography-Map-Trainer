@@ -10,7 +10,7 @@ public class MainMenuController : MonoBehaviour {
 	private static int region; // 1 = USA, 2 = Europe
 
 	void Start () {
-		
+		Screen.fullScreen = false;
 	}
 
 	public static int getDifficulty() {
@@ -65,6 +65,10 @@ public class MainMenuController : MonoBehaviour {
 
 	public void BackfromDifficulty() {
 		SceneManager.LoadScene ("Menu_Region");
+	}
+
+	public void ExitGame() {
+		Application.Quit ();
 	}
 
 
