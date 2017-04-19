@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\OptionsController.cs" />
      <Compile Include="Assets\Scripts\PinchZoom.cs" />
      <Compile Include="Assets\Scripts\PointerController.cs" />
+     <Compile Include="Assets\Scripts\SpriteSwap.cs" />
      <Compile Include="Assets\Scripts\TextButton.cs" />
      <Compile Include="Assets\Scripts\TouchCamera.cs" />
      <Compile Include="Assets\Scripts\USAMap.cs" />

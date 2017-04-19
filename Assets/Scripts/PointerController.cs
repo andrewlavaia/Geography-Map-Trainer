@@ -50,7 +50,7 @@ public class PointerController : MonoBehaviour {
 		} else {
 			//debugText.text = debugText.text = collisionObject.name.ToString () + " - " + MapController.getCurrentRegionName (); 
 			MapController.Miss ();
-			MapController.SetIncorrectStateText (collisionObject.name.ToString ());
+			//MapController.SetIncorrectStateText (collisionObject.name.ToString ());
 		}
 
 	}
