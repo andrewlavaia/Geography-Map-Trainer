@@ -4,13 +4,13 @@
     <Files>
       <File FileName="Assets\Scripts\TextButton.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HighScoreController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainMenuController.cs" Line="13" Column="29" />
+      <File FileName="Assets\Scripts\MainMenuController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TouchCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PointerController.cs" Line="34" Column="2" />
-      <File FileName="Assets\Scripts\MapController.cs" Line="235" Column="41" />
+      <File FileName="Assets\Scripts\PointerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MapController.cs" Line="103" Column="5" />
       <File FileName="Assets\Scripts\OptionsController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\USAMap.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpriteSwap.cs" Line="11" Column="59" />
+      <File FileName="Assets\Scripts\USAMap.cs" Line="31" Column="2" />
+      <File FileName="Assets\Scripts\SpriteSwap.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
