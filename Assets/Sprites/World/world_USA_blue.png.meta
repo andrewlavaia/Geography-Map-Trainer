@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 962d49e345bf07049b6abfe23e14d724
-timeCreated: 1493002954
+guid: 7487125da1dd1cc4ca288862fb2f54f8
+timeCreated: 1493010123
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -19,7 +19,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -67,13 +67,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
+    maxTextureSize: 1024
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
   spriteSheet:
     serializedVersion: 2
     sprites: []

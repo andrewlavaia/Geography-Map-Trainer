@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour {
 
 	private static int difficulty; // 1 = easy, 2 = normal, 3 = hard
-	private static int region; // 1 = USA, 2 = Europe
+	private static int region; // 0 = World, 1 = USA, 2 = Europe
 
 	void Start () {
 		Screen.fullScreen = false;
@@ -31,6 +31,11 @@ public class MainMenuController : MonoBehaviour {
 
 	public void SelectHighScores() {
 		SceneManager.LoadScene ("HighScores");
+	}
+
+	public void SelectWorld() {
+		SceneManager.LoadScene ("Menu_Difficulty");
+		region = 0;
 	}
 
 	public void SelectUSA() {
