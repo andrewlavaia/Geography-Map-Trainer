@@ -29,6 +29,10 @@ public class MainMenuController : MonoBehaviour {
 		SceneManager.LoadScene ("Options");
 	}
 
+	public void SelectHowToPlay() {
+		SceneManager.LoadScene ("HowToPlay");
+	}
+
 	public void SelectHighScores() {
 		SceneManager.LoadScene ("HighScores");
 	}

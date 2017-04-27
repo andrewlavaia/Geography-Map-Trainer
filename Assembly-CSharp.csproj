@@ -54,9 +54,7 @@
      <Compile Include="Assets\Scripts\PointerController.cs" />
      <Compile Include="Assets\Scripts\SpriteSwap.cs" />
      <Compile Include="Assets\Scripts\SwapColorInSprite.cs" />
-     <Compile Include="Assets\Scripts\TextButton.cs" />
      <Compile Include="Assets\Scripts\TouchCamera.cs" />
-     <Compile Include="Assets\Scripts\USAMap.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
