@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour {
 
 	private static int difficulty; // 1 = easy, 2 = normal, 3 = hard
-	private static int region; // 0 = World, 1 = USA, 2 = Europe, 3 = Africa, 4 = Latin America, 5 = Asia
+	private static int region; // 0 = World, 1 = USA, 2 = Europe, 3 = Africa, 4 = Latin America, 5 = Asia, 6 = Middle East
 
 	void Start () {
 		Screen.fullScreen = false;
@@ -65,6 +65,11 @@ public class MainMenuController : MonoBehaviour {
 	public void SelectAsia() {
 		SceneManager.LoadScene ("Menu_Difficulty");
 		region = 5;
+	}
+
+	public void SelectMiddleEast() {
+		SceneManager.LoadScene ("Menu_Difficulty");
+		region = 6;
 	}
 
 	public void LoadDifficultyEasy() {
