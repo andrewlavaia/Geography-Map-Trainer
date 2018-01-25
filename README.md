@@ -1,6 +1,8 @@
 ## What is it?
 
-Andrew's Geography Trainer is an app on the Google Play Store - https://play.google.com/store/apps/details?id=com.AndrewLavaia.AndrewsGeographyTrainer 
+Andrew's Geography Trainer is an app on the Google Play Store 
+
+https://play.google.com/store/apps/details?id=com.AndrewLavaia.AndrewsGeographyTrainer 
 
 ## Summary
 
