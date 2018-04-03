@@ -21,7 +21,7 @@ ExportedObj/
 *.unityproj
 *.booproj
 *.exe
-*.*_data
+test_Data/
 
 # ============ #
 # OS generated #
