@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1584
     height: 801
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 3851
+  controlID: 67
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3852
+  controlID: 68
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 3853
+  controlID: 23
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,10 +294,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -384
-    m_VBaseRangeMax: 384
+    m_HBaseRangeMin: -331.5
+    m_HBaseRangeMax: 331.5
+    m_VBaseRangeMin: -221
+    m_VBaseRangeMax: 221
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
       y: 17
       width: 985
       height: 442
-    m_Scale: {x: 0.5755208, y: 0.5755208}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 492.5, y: 221}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -324,12 +324,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -855.74664
-      y: -384
-      width: 1711.4933
-      height: 768
+      x: -492.5
+      y: -221
+      width: 985
+      height: 442
     m_MinimalGUI: 1
-  m_defaultScale: 0.5755208
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 985, y: 459}
@@ -364,9 +364,9 @@ MonoBehaviour:
     height: 459
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38010000
+    m_SelectedIDs: 0e270000
     m_LastClickedID: 0
-    m_ExpandedIDs: 2ea7ffffa2a7ffff66a8ffff6ca8ffff70a8ffff74a8ffff7aa8ffff8ea8ffff92a8ffff68b2ffffdeb2ffffa6b3ffffb0b3ffffb8b3ffffc0b3ffffcab3ffffd2b3ffffdab3ffff62b4ffff5eccffffe2ccffff72d0ffff34d1fffffad1ffff02d2ffff0ad2ffff10d2ffff18d2ffff2ed2ffff34d2ffffd4d7ffff70daffffb0dbffff9cdcffff9ee1ffff54e3ffffece3ffff72e5ffff38e6fffffee6ffff06e7ffff0ee7ffff14e7ffff1ce7ffff32e7ffff48e7ffffb4ffffff00000000764e0000524f0000a0510000f28e00008c90000018940000ecbf0000
+    m_ExpandedIDs: 4af5ffffdef5ffff5cf6ffffd8f6ffff4ef7ffff1cfaffff92faffff26fbffffdcfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -385,7 +385,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - HighScores
+  - Menu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -535,10 +535,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\alavaia\Documents\Unity\US Map game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 91}
-    m_SelectedIDs: 242a0000
-    m_LastClickedID: 10788
-    m_ExpandedIDs: 00000000ec290000242a00009a2c0000b02d0000002f0000022f0000042f0000062f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: fc240000
+    m_LastClickedID: 9468
+    m_ExpandedIDs: 00000000c0240000fc24000092270000be2800005a2c00005c2c00005e2c0000602c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -566,7 +566,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ec290000242a00009a2c0000b02d0000002f0000022f0000042f0000062f000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c0240000fc24000092270000be2800005a2c00005c2c00005e2c0000602c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: a42e0000e42c0000ba230000be230000d0230000c0230000d82300002a06000000000000da230000f0230000ee2300008a25000062390000dc230000de230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
