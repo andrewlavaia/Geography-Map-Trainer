@@ -80,4 +80,6 @@ public class TouchCamera : MonoBehaviour {
 			cam.orthographicSize = starting_size;
 		}
 	}
+
+	// !!! add a new function here that moves camera to a given position
 }

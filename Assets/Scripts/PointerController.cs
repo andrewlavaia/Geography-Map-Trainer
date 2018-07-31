@@ -8,10 +8,12 @@ public class PointerController : MonoBehaviour {
 
 	public Button confirmButton;
 	private Rigidbody2D rb2d;
-	public static GameObject[] collisionObject = {null, null}; // an array is used for more generous collision checking
+	//	public static GameObject[] collisionObject = {null, null}; // an array is used for more generous collision checking
+	public static List<string> collisionList;
 
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
+		collisionList = new List<string> ();
 	}
 
 	// Update is called once per frame
@@ -22,18 +24,21 @@ public class PointerController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		other.gameObject.GetComponent<SpriteRenderer> ().enabled = true;
-		collisionObject [1] = collisionObject [0]; // allows for a correct answer when two regions are selected at once (ie colliders overflow) 
-		collisionObject [0] = other.gameObject;
+		//	collisionObject [1] = collisionObject [0]; // allows for a correct answer when two regions are selected at once (ie colliders overflow) 
+		//	collisionObject [0] = other.gameObject;
+		collisionList.Add (other.gameObject.name.ToString());
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
 		other.gameObject.GetComponent<SpriteRenderer> ().enabled = false;
-		collisionObject [1] = collisionObject [0]; 	// must reset collisionObject[1] otherwise it will be a correct answer if the region was the second to last region selected
+		//	collisionObject [1] = collisionObject [0]; 	// must reset collisionObject[1] otherwise it will be a correct answer if the region was the second to last region selected
 													// collisionObject[1] should not be null because it will cause errors in clickConfirm()
+		collisionList.Remove (other.gameObject.name.ToString());
 	}
 
 	public void clickConfirm() {
-		if (collisionObject[0] != null && (collisionObject[0].name.ToString () == MapController.getCurrentRegionName () || collisionObject[1].name.ToString () == MapController.getCurrentRegionName ())) {
+		//	if (collisionObject[0] != null && (collisionObject[0].name.ToString () == MapController.getCurrentRegionName () || collisionObject[1].name.ToString () == MapController.getCurrentRegionName ())) {
+		if (collisionList.Contains(MapController.getCurrentRegionName ())) {
 			MapController.Correct ();
 		} else {
 			MapController.Miss ();
