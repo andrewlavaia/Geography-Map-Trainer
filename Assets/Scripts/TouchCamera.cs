@@ -81,5 +81,19 @@ public class TouchCamera : MonoBehaviour {
 		}
 	}
 
-	// !!! add a new function here that moves camera to a given position
+	public static void MoveCamera(GameObject obj){
+		Vector3 new_position = obj.transform.position;
+
+		// need to transform position by scale for USA and Europe since they were done differently
+		if (MainMenuController.getRegion() == 1 || MainMenuController.getRegion() == 2) {
+			new_position.x *= obj.GetComponentInParent<Transform> ().localScale.x;
+			new_position.y *= obj.GetComponentInParent<Transform> ().localScale.y;
+		}
+
+		if (cam != null) { 
+			cam.transform.localRotation = starting_rotation;
+			cam.orthographicSize = starting_size;
+			cam.transform.position = starting_position + new_position;
+		}
+	}
 }
