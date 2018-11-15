@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OptionsController : MonoBehaviour {
 
-	public Button optionButton;
+	public Button soundButton;
 	public Sprite switchOn;
 	public Sprite switchOff;
 
@@ -18,20 +18,23 @@ public class OptionsController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (PlayerPrefs.GetInt ("SETTINGS_Sound") == 0) {
-			optionButton.GetComponent<Image> ().sprite = switchOff;
-		} else {
-			optionButton.GetComponent<Image> ().sprite = switchOn;
+			soundButton.GetComponent<Image> ().sprite = switchOff;
+		} 
+		else {
+			soundButton.GetComponent<Image> ().sprite = switchOn;
 		}
 
-		if (PlayerPrefs.GetInt ("SETTINGS_Delay") == 0) {
+		if (PlayerPrefs.GetInt ("SETTINGS_Delay") == 1) {
 			delayButtonShort.GetComponent<Image> ().sprite = radioChecked;
 			delayButtonMedium.GetComponent<Image> ().sprite = radioUnchecked;
 			delayButtonLong.GetComponent<Image> ().sprite = radioUnchecked;		
-		} else if (PlayerPrefs.GetInt ("SETTINGS_Delay") == 2) {
+		} 
+		else if (PlayerPrefs.GetInt ("SETTINGS_Delay") == 3) {
 			delayButtonShort.GetComponent<Image> ().sprite = radioUnchecked;
 			delayButtonMedium.GetComponent<Image> ().sprite = radioUnchecked;
 			delayButtonLong.GetComponent<Image> ().sprite = radioChecked;
-		} else { // default to 1
+		} 
+		else { // default to 1 if setting is not set yet
 			delayButtonShort.GetComponent<Image> ().sprite = radioUnchecked;
 			delayButtonMedium.GetComponent<Image> ().sprite = radioChecked;
 			delayButtonLong.GetComponent<Image> ().sprite = radioUnchecked;	
@@ -43,11 +46,11 @@ public class OptionsController : MonoBehaviour {
 	}
 
 	public void pressSwitch() {
-		if (optionButton.GetComponent<Image> ().sprite.Equals(switchOn) ) {
-			optionButton.GetComponent<Image> ().sprite = switchOff;
+		if (soundButton.GetComponent<Image> ().sprite.Equals(switchOn) ) {
+			soundButton.GetComponent<Image> ().sprite = switchOff;
 			PlayerPrefs.SetInt ("SETTINGS_Sound", 0);
 		} else {
-			optionButton.GetComponent<Image> ().sprite = switchOn;
+			soundButton.GetComponent<Image> ().sprite = switchOn;
 			PlayerPrefs.SetInt ("SETTINGS_Sound", 1);
 		}
 	}
@@ -56,21 +59,21 @@ public class OptionsController : MonoBehaviour {
 		delayButtonShort.GetComponent<Image> ().sprite = radioChecked;
 		delayButtonMedium.GetComponent<Image> ().sprite = radioUnchecked;
 		delayButtonLong.GetComponent<Image> ().sprite = radioUnchecked;	
-		PlayerPrefs.SetInt ("SETTINGS_Delay", 0);
+		PlayerPrefs.SetInt ("SETTINGS_Delay", 1);
 	}
 
 	public void pressDelayButtonMedium() {
 		delayButtonShort.GetComponent<Image> ().sprite = radioUnchecked;
 		delayButtonMedium.GetComponent<Image> ().sprite = radioChecked;
 		delayButtonLong.GetComponent<Image> ().sprite = radioUnchecked;	
-		PlayerPrefs.SetInt ("SETTINGS_Delay", 1);
+		PlayerPrefs.SetInt ("SETTINGS_Delay", 2);
 	}
 
 	public void pressDelayButtonLong() {
 		delayButtonShort.GetComponent<Image> ().sprite = radioUnchecked;
 		delayButtonMedium.GetComponent<Image> ().sprite = radioUnchecked;
 		delayButtonLong.GetComponent<Image> ().sprite = radioChecked;	
-		PlayerPrefs.SetInt ("SETTINGS_Delay", 2);
+		PlayerPrefs.SetInt ("SETTINGS_Delay", 3);
 	}
 
 }

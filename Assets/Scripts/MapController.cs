@@ -50,18 +50,19 @@ public class MapController : MonoBehaviour {
 	private static GameObject sound_victory;
 	private static float timeLeft;
 	private static float totalTime;
-	private static float incorrectTextTimer;
-	private static float correctTimer;
+	private static float missDelay;
+	private static float correctDelay;
 	private static float blinkTimer; 
 	private static bool blinkFlag;
 	private static bool isGameOver;
 	private static bool isPaused;
 
-	private const float MISS_TIMER = 30.0f;
-	private const float INCORRECT_TEXT_TIMER = 1.25f;
-	private const float CORRECT_TIMER = 1.25f;
-	private const float BLINK_TIMER_INTERVAL = 0.15f;
 	private const int ALLOWABLE_MISSES = 5;
+	private const float MISS_TIMER = 30.0f;
+	private const float DELAY_TIMER_SHORT = 0.5f;
+	private const float DELAY_TIMER_MEDIUM = 1.25f;
+	private const float DELAY_TIMER_LONG = 2.5f;
+	private const float BLINK_TIMER_INTERVAL = 0.15f;
 
 
 	void Start() {
@@ -107,8 +108,8 @@ public class MapController : MonoBehaviour {
 		isPaused = false;
 
 		resetTimeLeft ();
-		resetIncorrectTextTimer (); 
-		resetCorrectTimer ();
+		resetMissDelay (); 
+		resetCorrectDelay ();
 		resetBlinkTimer ();
 
 		button_newgame.SetActive (false); // needs to be instantiated and assigned to a variable so that I can use SetActive()
@@ -220,13 +221,13 @@ public class MapController : MonoBehaviour {
 		}
 			
 		if (missedFlag) {
-			incorrectTextTimer -= Time.deltaTime;
+			missDelay -= Time.deltaTime;
 			stateText.text = getMissedRegionName ();
 			stateText.color = new Color32 (163, 66, 66, 255);
 			miss_indicator.SetActive (true);
 			blinkMissedRegion ();
 
-			if (incorrectTextTimer <= 0) {
+			if (missDelay <= 0) {
 				stateList [missedIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 				miss_indicator.SetActive (false);
 
@@ -242,18 +243,18 @@ public class MapController : MonoBehaviour {
 					Pointer.SetActive (true);
 				} 
 
-				resetIncorrectTextTimer ();
+				resetMissDelay ();
 				resetBlinkTimer ();
 				missedFlag = false;
 			}
 		}
 
 		if (correctFlag) {
-			correctTimer -= Time.deltaTime;
+			correctDelay -= Time.deltaTime;
 			correct_indicator.SetActive (true);
 			stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = true;
 
-			if (correctTimer <= 0) {
+			if (correctDelay <= 0) {
 				stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 				correct_indicator.SetActive (false);
 				RemoveStateFromList ();
@@ -264,7 +265,7 @@ public class MapController : MonoBehaviour {
 				Button_Confirm.SetActive (true);
 				Pointer.SetActive (true);
 
-				resetCorrectTimer ();
+				resetCorrectDelay ();
 				correctFlag = false;
 			}
 		}
@@ -303,7 +304,7 @@ public class MapController : MonoBehaviour {
 	public static void Correct() {
 		correct++;
 		correctFlag = true;
-		resetCorrectTimer ();
+		resetCorrectDelay ();
 		SetCorrectText ();
 		HighlightRegion (stateIndex);
 		PlaySound (sound_correct);
@@ -314,7 +315,7 @@ public class MapController : MonoBehaviour {
 		missed++;
 		missedIndex = stateIndex;
 		missedFlag = true;
-		resetIncorrectTextTimer ();
+		resetMissDelay ();
 		resetBlinkTimer ();
 		SetMissedText ();
 		HighlightRegion (missedIndex);
@@ -368,12 +369,44 @@ public class MapController : MonoBehaviour {
 
 	}
 
-	private static void resetIncorrectTextTimer() {
-		incorrectTextTimer = INCORRECT_TEXT_TIMER;
+	private static void resetMissDelay() {
+		switch (PlayerPrefs.GetInt ("SETTINGS_Delay")) {
+			case 1: // Short
+				missDelay = DELAY_TIMER_SHORT;
+				break;
+
+			case 2: // Medium
+				missDelay = DELAY_TIMER_MEDIUM;
+				break;
+
+			case 3: // Long
+				missDelay = DELAY_TIMER_LONG;
+				break;
+
+			default:
+				missDelay = DELAY_TIMER_MEDIUM;
+				break;			
+		}
 	}
 
-	private static void resetCorrectTimer() {
-		correctTimer = CORRECT_TIMER;
+	private static void resetCorrectDelay() {
+		switch (PlayerPrefs.GetInt ("SETTINGS_Delay")) {
+			case 1: // Short
+				correctDelay = DELAY_TIMER_SHORT;
+				break;
+
+			case 2: // Medium
+				correctDelay = DELAY_TIMER_MEDIUM;
+				break;
+
+			case 3: // Long
+				correctDelay = DELAY_TIMER_LONG;
+				break;
+			
+			default:
+				correctDelay = DELAY_TIMER_MEDIUM;
+				break;
+		}
 	}
 
 	private static void resetBlinkTimer() {
