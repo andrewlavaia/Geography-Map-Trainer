@@ -18,6 +18,7 @@ public class DifficultyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GameState.reset();
 		switch ( MainMenuController.getRegion() ){
 		case 0: // World
 			EasyLabel.text = "50 Countries";

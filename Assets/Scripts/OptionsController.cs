@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OptionsController : MonoBehaviour {
 
@@ -74,6 +75,15 @@ public class OptionsController : MonoBehaviour {
 		delayButtonMedium.GetComponent<Image> ().sprite = radioUnchecked;
 		delayButtonLong.GetComponent<Image> ().sprite = radioChecked;	
 		PlayerPrefs.SetInt ("SETTINGS_Delay", 3);
+	}
+
+	public void returnToPreviousScreen() {
+		if (GameState.saved) {
+			SceneManager.LoadScene ("Map");
+		} 
+		else {
+			SceneManager.LoadScene ("Menu");
+		}
 	}
 
 }
