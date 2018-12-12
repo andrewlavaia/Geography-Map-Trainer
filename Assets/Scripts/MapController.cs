@@ -128,11 +128,93 @@ public class MapController : MonoBehaviour {
 		miss_indicator.SetActive (false);
 		totalTimeText.text = "";
 
+		setActiveRegion();
+		setStateList();
+
 		loadGameState();
+		
+        SelectStateRandomly();
+    }
 
-		Debug.Log(difficulty);
-		Debug.Log(region);
+	void Update() 
+	{
+		if (isPaused) {
+			return;
+		}
 
+		if (isGameOver) {
+			UIPanel_Top.SetActive (false);
+			return;
+		}
+
+		if (!missedFlag && !correctFlag) {
+			timeLeft -= Time.deltaTime;
+			totalTime += Time.deltaTime;
+		}
+
+		timerText.text = "Timer: " + timeLeft.ToString ("F1");
+
+		if (timeLeft <= 0 && !isGameOver) {
+			Miss ();
+			resetTimeLeft ();
+		}
+			
+		if (missedFlag) {
+			missDelay -= Time.deltaTime;
+			stateText.text = getMissedRegionName ();
+			stateText.color = new Color32 (163, 66, 66, 255);
+			miss_indicator.SetActive (true);
+			blinkMissedRegion ();
+
+			if (missDelay <= 0) {
+				stateList [missedIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
+				miss_indicator.SetActive (false);
+				SelectStateRandomly ();
+				if (isGameOver) {
+					UIPanel_Top.SetActive (false);
+				} 
+				else {
+					resetTimeLeft ();
+					stateText.text = getCurrentRegionName ();
+					stateText.color = Color.black;
+					Button_Confirm.SetActive (true);
+					Pointer.SetActive (true);
+				} 
+
+				resetMissDelay ();
+				resetBlinkTimer ();
+				missedFlag = false;
+			}
+		}
+
+		if (correctFlag) {
+			correctDelay -= Time.deltaTime;
+			correct_indicator.SetActive (true);
+			stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = true;
+
+			if (correctDelay <= 0) {
+				stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
+				correct_indicator.SetActive (false);
+				RemoveStateFromList ();
+				SelectStateRandomly ();
+				if (isGameOver) {
+					UIPanel_Top.SetActive (false);					
+				} 
+				else {
+					resetTimeLeft ();
+					stateText.text = getCurrentRegionName ();
+					stateText.color = Color.black;
+					Button_Confirm.SetActive (true);
+					Pointer.SetActive (true);
+
+					resetCorrectDelay ();
+					correctFlag = false;
+				}
+			}
+		}
+	}
+
+	private static void setActiveRegion() {
 		switch (region)
 		{
 		case 0: // World
@@ -197,9 +279,10 @@ public class MapController : MonoBehaviour {
 			Asia.SetActive (false);
 			LatinAmerica.SetActive (false);
 			break;
-
 		}
+	}
 
+	private static void setStateList() {
 		states = GameObject.FindGameObjectsWithTag ("Easy");
 		stateList = new List<GameObject> (states);
 		if (difficulty == 2 || difficulty == 3) {
@@ -209,77 +292,6 @@ public class MapController : MonoBehaviour {
 		if (difficulty == 3) {
 			states = GameObject.FindGameObjectsWithTag ("Hard");
 			stateList.AddRange (states);
-		}
-		
-        SelectStateRandomly();
-    }
-
-	void Update() 
-	{
-		if (isPaused) {
-			return;
-		}
-
-		if (!missedFlag && !correctFlag) {
-			timeLeft -= Time.deltaTime;
-			totalTime += Time.deltaTime;
-		}
-
-		timerText.text = "Timer: " + timeLeft.ToString ("F1");
-
-		if (timeLeft <= 0 && !isGameOver) {
-			Miss ();
-			resetTimeLeft ();
-		}
-			
-		if (missedFlag) {
-			missDelay -= Time.deltaTime;
-			stateText.text = getMissedRegionName ();
-			stateText.color = new Color32 (163, 66, 66, 255);
-			miss_indicator.SetActive (true);
-			blinkMissedRegion ();
-
-			if (missDelay <= 0) {
-				stateList [missedIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
-				miss_indicator.SetActive (false);
-
-				if (isGameOver) {
-					UIPanel_Top.SetActive (false);
-				} 
-				else {
-					SelectStateRandomly ();
-					resetTimeLeft ();
-					stateText.text = getCurrentRegionName ();
-					stateText.color = Color.black;
-					Button_Confirm.SetActive (true);
-					Pointer.SetActive (true);
-				} 
-
-				resetMissDelay ();
-				resetBlinkTimer ();
-				missedFlag = false;
-			}
-		}
-
-		if (correctFlag) {
-			correctDelay -= Time.deltaTime;
-			correct_indicator.SetActive (true);
-			stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = true;
-
-			if (correctDelay <= 0) {
-				stateList [stateIndex].gameObject.GetComponent<SpriteRenderer> ().enabled = false;
-				correct_indicator.SetActive (false);
-				RemoveStateFromList ();
-				SelectStateRandomly ();
-				resetTimeLeft ();
-				stateText.text = getCurrentRegionName ();
-				stateText.color = Color.black;
-				Button_Confirm.SetActive (true);
-				Pointer.SetActive (true);
-
-				resetCorrectDelay ();
-				correctFlag = false;
-			}
 		}
 	}
 
@@ -307,10 +319,12 @@ public class MapController : MonoBehaviour {
 			SaveScore();
 			PlaySound (sound_victory);
 			GameOver();
+		} 
+		else { 
+			stateIndex = Random.Range (0, stateList.Count); 
+			stateText.text = getCurrentRegionName ();
+			TouchCamera.ResetCamera ();
 		}
-		stateIndex = Random.Range (0, stateList.Count); 
-		stateText.text = getCurrentRegionName ();
-		TouchCamera.ResetCamera ();
     }
 
 	public static void Correct() {
@@ -628,7 +642,6 @@ public class MapController : MonoBehaviour {
 		if (PlayerPrefs.GetInt ("SETTINGS_Sound") == 1) {
 			sound.GetComponent<AudioSource> ().Play ();
 		}
-			
 	}
 
 	public void clickMainMenu() {
@@ -685,21 +698,22 @@ public class MapController : MonoBehaviour {
 	}	
 
 	public void saveGameState() {
-		Debug.Log("saving state");
 		GameState.saved = true;
 		GameState.region = region;
 		GameState.difficulty = difficulty;
 		GameState.correct = correct;
 		GameState.missed = missed;
 		GameState.score = score;
-		GameState.stateList = stateList;
 		GameState.timeLeft = timeLeft;
+		
+		GameState.state_names.Clear();
+		for (int i = 0; i < stateList.Count; i++) {
+			GameState.state_names.Add(stateList[i].name);
+		}
 	}
 
 	public void loadGameState() {
 		if (GameState.saved == true) {
-			Debug.Log("loading state");
-
 			GameState.saved = false;
 
 			region = GameState.region;
@@ -707,13 +721,20 @@ public class MapController : MonoBehaviour {
 			correct = GameState.correct;
 			missed = GameState.missed;
 			score = GameState.score;
-			stateList = GameState.stateList;
 			timeLeft = GameState.timeLeft;
+
+			for (int i = 0; i < stateList.Count; i++) {
+				if (!GameState.state_names.Contains(stateList[i].name)) {
+					stateList.RemoveAt(i);
+					i--;
+				}
+			}
+
+			setActiveRegion();
 
 			SetCorrectText ();
 			SetMissedText ();
 			UpdateScore (); 
-
 		}
 	}
 }

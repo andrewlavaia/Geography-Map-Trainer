@@ -69,7 +69,6 @@ public class MainMenuController : MonoBehaviour {
 		region = 6;
 	}
 
-
 	public void BackfromRegion() {
 		SceneManager.LoadScene ("Menu");
 	}

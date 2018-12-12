@@ -1,6 +1,4 @@
-﻿// Just add this script to your camera. It doesn't need any configuration.
-
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TouchCamera : MonoBehaviour {
 	static Camera cam;

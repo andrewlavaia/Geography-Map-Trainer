@@ -980,14 +980,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2c9f29d2c15464ca5996fabbc1ab6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundButton: {fileID: 0}
-  switchOn: {fileID: 0}
-  switchOff: {fileID: 0}
-  delayButtonShort: {fileID: 0}
-  delayButtonMedium: {fileID: 0}
-  delayButtonLong: {fileID: 0}
-  radioChecked: {fileID: 0}
-  radioUnchecked: {fileID: 0}
+  soundButton: {fileID: 1301153748}
+  switchOn: {fileID: 21300000, guid: 9f869276e3e958c45b9a467bccfca2c6, type: 3}
+  switchOff: {fileID: 21300000, guid: 131c6922da040b943894b7c94e191c2a, type: 3}
+  delayButtonShort: {fileID: 1379987228}
+  delayButtonMedium: {fileID: 2026725794}
+  delayButtonLong: {fileID: 1095229758}
+  radioChecked: {fileID: 21300000, guid: 9b977d234802cb94b80a0c4252c5528b, type: 3}
+  radioUnchecked: {fileID: 21300000, guid: 3766effb5b6b8454f94b084affed22f2, type: 3}
 --- !u!114 &1239294225
 MonoBehaviour:
   m_ObjectHideFlags: 0
