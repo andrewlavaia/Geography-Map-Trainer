@@ -463,9 +463,9 @@ public class MapController : MonoBehaviour {
 		string scoreKey = regionName + "_" + difficultyName + "_Score_Key";
 		string timeKey = regionName + "_" + difficultyName + "_Time_Key";
 		float highScore = PlayerPrefs.GetFloat (scoreKey);
-		float bestTime = PlayerPrefs.GetFloat (timeKey);
+		int bestTime = PlayerPrefs.GetInt (timeKey);
 
-		if (score > highScore || (score == highScore && timeScore < bestTime)) {
+		if (score > highScore || (score >= highScore && timeScore < bestTime)) {
 			PlayerPrefs.SetFloat (scoreKey, score);
 			PlayerPrefs.SetInt (timeKey, timeScore);
 		}
