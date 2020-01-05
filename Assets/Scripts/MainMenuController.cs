@@ -8,14 +8,26 @@ public class MainMenuController : MonoBehaviour {
 
 
 	private static int region; // 0 = World, 1 = USA, 2 = Europe, 3 = Africa, 4 = Latin America, 5 = Asia, 6 = Middle East
+	private static Dictionary<int, string> regionDict = new Dictionary<int, string> () {
+		{ 0, "World" },
+		{ 1, "USAStates" },
+		{ 2, "Europe" },
+		{ 3, "Africa" },
+		{ 4, "LatinAmerica" },
+		{ 5, "Asia" },
+		{ 6, "MiddleEast" },
+	};
 
 	void Start () {
 		Screen.fullScreen = false;
 	}
 
-
 	public static int getRegion() {
 		return region;
+	}
+
+	public static string getRegionName() {
+		return regionDict [region];
 	}
 
 	public void SelectNewGame() {

@@ -11,9 +11,18 @@ public class DifficultyController : MonoBehaviour {
 	public Text HardLabel;
 
 	private static int difficulty; // 1 = easy, 2 = normal, 3 = hard
+	private static Dictionary<int, string> difficultyDict = new Dictionary<int, string>() {
+		{ 1, "Easy" },
+		{ 2, "Normal" },
+		{ 3, "Hard" },
+	};
 
 	public static int getDifficulty() {
 		return difficulty;
+	}
+
+	public static string getDifficultyName() {
+		return difficultyDict [difficulty];
 	}
 
 	// Use this for initialization

@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class MapController : MonoBehaviour {
 
 	public static List<GameObject> stateList;
+	public static int stateCount;
 	public static Text correctText;
 	public static Text missedText;
 	public static Text timerText;
@@ -130,6 +131,7 @@ public class MapController : MonoBehaviour {
 
 		setActiveRegion();
 		setStateList();
+		stateCount = stateList.Count;
 
 		loadGameState();
 		
@@ -379,7 +381,7 @@ public class MapController : MonoBehaviour {
 	}
 
 	public static void UpdateScore(){
-		score = (float)correct / ((float)correct + (float)missed);
+		score = (float)correct / stateCount;
 		scoreText.text = "Score: " + score.ToString ("P0");
 	}
 
@@ -456,186 +458,17 @@ public class MapController : MonoBehaviour {
 		int timeScore = (int)totalTime;
 		totalTimeText.text = "Time: " + HighScoreController.convertSecondstoString (timeScore);
 
-		switch (region) {
-		case 0: // World
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("World_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("World_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("World_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("World_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("World_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("World_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("World_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("World_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("World_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("World_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("World_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("World_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("World_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("World_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("World_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
+		string regionName = MainMenuController.getRegionName ();
+		string difficultyName = DifficultyController.getDifficultyName ();
+		string scoreKey = regionName + "_" + difficultyName + "_Score_Key";
+		string timeKey = regionName + "_" + difficultyName + "_Time_Key";
+		float highScore = PlayerPrefs.GetFloat (scoreKey);
+		float bestTime = PlayerPrefs.GetFloat (timeKey);
 
-		case 1: // USA states
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("USAStates_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("USAStates_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("USAStates_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("USAStates_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("USAStates_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("USAStates_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("USAStates_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("USAStates_Normal_Time_Key"))) { 
-					PlayerPrefs.SetFloat ("USAStates_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("USAStates_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("USAStates_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("USAStates_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("USAStates_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("USAStates_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("USAStates_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		case 2: // Europe
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("Europe_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("Europe_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Europe_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Europe_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("Europe_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("Europe_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("Europe_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Europe_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Europe_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("Europe_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("Europe_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("Europe_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Europe_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Europe_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("Europe_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		case 3: // Africa
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("Africa_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("Africa_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Africa_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Africa_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("Africa_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("Africa_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("Africa_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Africa_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Africa_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("Africa_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("Africa_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("Africa_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Africa_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Africa_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("Africa_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		case 4: // Latin America
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("LatinAmerica_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("LatinAmerica_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("LatinAmerica_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("LatinAmerica_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("LatinAmerica_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("LatinAmerica_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("LatinAmerica_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("LatinAmerica_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("LatinAmerica_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("LatinAmerica_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("LatinAmerica_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("LatinAmerica_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("LatinAmerica_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("LatinAmerica_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("LatinAmerica_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		case 5: // Asia
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("Asia_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("Asia_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Asia_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Asia_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("Asia_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("Asia_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("Asia_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Asia_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Asia_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("Asia_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("Asia_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("Asia_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("Asia_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("Asia_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("Asia_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		case 6: // Middle East
-			switch (difficulty) {
-			case 1: // Easy
-				if (score > PlayerPrefs.GetFloat ("MiddleEast_Easy_Score_Key") || (score == PlayerPrefs.GetFloat ("MiddleEast_Easy_Score_Key") && timeScore < PlayerPrefs.GetFloat ("MiddleEast_Easy_Time_Key"))) {
-					PlayerPrefs.SetFloat ("MiddleEast_Easy_Score_Key", score);
-					PlayerPrefs.SetInt ("MiddleEast_Easy_Time_Key", timeScore);
-				}
-				break;
-			case 2: // Normal
-				if (score > PlayerPrefs.GetFloat ("MiddleEast_Normal_Score_Key") || (score == PlayerPrefs.GetFloat ("MiddleEast_Normal_Score_Key") && timeScore < PlayerPrefs.GetFloat ("MiddleEast_Normal_Time_Key"))) {
-					PlayerPrefs.SetFloat ("MiddleEast_Normal_Score_Key", score);
-					PlayerPrefs.SetInt ("MiddleEast_Normal_Time_Key", timeScore);
-				}
-				break;
-			case 3: // Hard
-				if (score > PlayerPrefs.GetFloat ("MiddleEast_Hard_Score_Key") || (score == PlayerPrefs.GetFloat ("MiddleEast_Hard_Score_Key") && timeScore < PlayerPrefs.GetFloat ("MiddleEast_Hard_Time_Key"))) {
-					PlayerPrefs.SetFloat ("MiddleEast_Hard_Score_Key", score);
-					PlayerPrefs.SetInt ("MiddleEast_Hard_Time_Key", timeScore);
-				}
-				break;
-			default:
-				break;
-			}
-			break;
-
-		default:
-			break;
+		if (score > highScore || (score == highScore && timeScore < bestTime)) {
+			PlayerPrefs.SetFloat (scoreKey, score);
+			PlayerPrefs.SetInt (timeKey, timeScore);
 		}
-
 	}
 
 	public static void PlaySound(GameObject sound){
