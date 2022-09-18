@@ -157,7 +157,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.AndrewLavaia.com.GeographyMapTrainer
+    Android: com.AndrewLavaia.AndrewsGeographyTrainer
     Standalone: unity.AndrewLavaia.com.Andrew's Geography Trainer
     Tizen: com.AndrewLavaia.AndrewsGeographyTrainer
     iPhone: com.AndrewLavaia.AndrewsGeographyTrainer
@@ -166,8 +166,8 @@ PlayerSettings:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 11
+  overrideDefaultApplicationIdentifier: 1
+  AndroidBundleVersionCode: 12
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
