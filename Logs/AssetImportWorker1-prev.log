@@ -1,0 +1,1026 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 12038 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/dev/Geography-Map-Trainer
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+59739
+Successfully changed project path to: C:/dev/Geography-Map-Trainer
+C:/dev/Geography-Map-Trainer
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 106.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1 (40eb3a945986)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/dev/Geography-Map-Trainer/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   Intel
+    VRAM:     6019 MB
+    Driver:   27.20.100.9664
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006145 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 119.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.848 seconds
+Domain Reload Profiling:
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (623ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (386ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (71ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005874 seconds.
+Android Extension - Scanning For ADB Devices 755 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\dev\Geography-Map-Trainer\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\dev\Geography-Map-Trainer\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.475 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1476ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1215ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (301ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (681ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (138ms)
+				ProcessInitializeOnLoadAttributes (310ms)
+				ProcessInitializeOnLoadMethodAttributes (193ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3898 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (56.3 KB). Loaded Objects now: 4330.
+Memory consumption went from 130.8 MB to 130.7 MB.
+Total: 8.193700 ms (FindLiveObjects: 0.369200 ms CreateObjectMapping: 0.287800 ms MarkObjects: 7.410000 ms  DeleteObjects: 0.125300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1702.737373 seconds.
+  path: Assets/Scenes/Map.unity
+  artifactKey: Guid(7dd6854a5e883cf4b8d38bc0b348e13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map.unity using Guid(7dd6854a5e883cf4b8d38bc0b348e13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d88ee9459e2ce686ce460ff8131659') in 0.007083 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 11.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (23.0 KB). Loaded Objects now: 4330.
+Memory consumption went from 53.6 MB to 53.6 MB.
+Total: 7.821800 ms (FindLiveObjects: 0.353900 ms CreateObjectMapping: 0.298600 ms MarkObjects: 7.118600 ms  DeleteObjects: 0.049400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (23.0 KB). Loaded Objects now: 4330.
+Memory consumption went from 53.6 MB to 53.6 MB.
+Total: 12.023600 ms (FindLiveObjects: 0.343100 ms CreateObjectMapping: 0.280200 ms MarkObjects: 11.361900 ms  DeleteObjects: 0.037300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 933.945746 seconds.
+  path: Assets/Sprites/WorldMapIllustrated.png
+  artifactKey: Guid(ccd56ff34de798740acddbaac0a87c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/WorldMapIllustrated.png using Guid(ccd56ff34de798740acddbaac0a87c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57621bd63d962dca89ee392d47d75675') in 0.439568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.755035 seconds.
+  path: Assets/Sprites/Africa/AfricaMap.png
+  artifactKey: Guid(5dfa6721f3d5ca44d95d30c6338092f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Africa/AfricaMap.png using Guid(5dfa6721f3d5ca44d95d30c6338092f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b2e7cc3b05bd71d357c1065532220d') in 0.096863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/GUI/checkmark.png
+  artifactKey: Guid(7f1fbc9d87d2f654eb394d3a2643bfac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/checkmark.png using Guid(7f1fbc9d87d2f654eb394d3a2643bfac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23edc1839d882b7af9dcc000c547192b') in 0.024389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Europe/belarus.png
+  artifactKey: Guid(18cf1e7121b95b0428d638e2e7cae95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/belarus.png using Guid(18cf1e7121b95b0428d638e2e7cae95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f216017a3998250508ea9ac0e344c7f3') in 0.022468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Europe/albania.png
+  artifactKey: Guid(197a76808f4272d4a96e022fe98079bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/albania.png using Guid(197a76808f4272d4a96e022fe98079bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc84cf0e53aedb00660369d2cb09f88') in 0.015986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Europe/bulgaria.png
+  artifactKey: Guid(389dcd442cd11934dae8d8518f597cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/bulgaria.png using Guid(389dcd442cd11934dae8d8518f597cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d76167bffd79d20060c3249101a8902') in 0.029065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Europe/bosniaandherzegovina.png
+  artifactKey: Guid(b9643fe60972bba4f84654638347c3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/bosniaandherzegovina.png using Guid(b9643fe60972bba4f84654638347c3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8a2963dcb291f4ec2bd47d59c40db2') in 0.018877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/USA States/AR.png
+  artifactKey: Guid(65ec8251c52f38346b0f74359e5160b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/AR.png using Guid(65ec8251c52f38346b0f74359e5160b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d95791d702f376ba5446dcfed4730e4') in 0.018708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/USA States/AL.png
+  artifactKey: Guid(a2d751c008c084c48b22cc67b1340324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/AL.png using Guid(a2d751c008c084c48b22cc67b1340324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1361063d921c4f22838565409181dbb') in 0.021999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Europe/belgium.png
+  artifactKey: Guid(989c399162fcc6c40be237ab4202595e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/belgium.png using Guid(989c399162fcc6c40be237ab4202595e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790577224409c9a3279f663fcf6e933b') in 0.017151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/USA States/CO.png
+  artifactKey: Guid(b41d4e1502669784e949d5a0c9f8859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/CO.png using Guid(b41d4e1502669784e949d5a0c9f8859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a1a3f8441d5d4af06f6143968ada37') in 0.029353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Europe/croatia.png
+  artifactKey: Guid(be1ff0549582a3e4ebc472a43e7354af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/croatia.png using Guid(be1ff0549582a3e4ebc472a43e7354af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52637e072232f41be3a63fc731d00e99') in 0.021291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/GUI/checkmark(original).png
+  artifactKey: Guid(1b21cee9bdea35c4fb2099ad21c580bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/checkmark(original).png using Guid(1b21cee9bdea35c4fb2099ad21c580bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243748a2d61d9b1cbe525f01f3991c12') in 0.060364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/GUI/blue_clicked.png
+  artifactKey: Guid(864675af6a1a8a64f80e68dec751846f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/blue_clicked.png using Guid(864675af6a1a8a64f80e68dec751846f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c6d703aa9cf7ce611bd34656f24331') in 0.046314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.459735 seconds.
+  path: Assets/Sprites/Europe/denmark.png
+  artifactKey: Guid(ec3badcb2e69f0647b3acfc9a8010f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/denmark.png using Guid(ec3badcb2e69f0647b3acfc9a8010f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807150f2b778ad46397f01ec70d180d4') in 0.018249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Europe/estonia.png
+  artifactKey: Guid(724a641b889c4684a9a26b41512ad6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/estonia.png using Guid(724a641b889c4684a9a26b41512ad6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3008f6fc4ba23fe7d860b1100a8777dc') in 0.016234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Europe/EuropeMap.png
+  artifactKey: Guid(0c5dc4387adc30f429b5161c4daa4f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/EuropeMap.png using Guid(0c5dc4387adc30f429b5161c4daa4f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c448c773764fb920e2ba0420bd6243') in 0.097095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/USA States/LA.png
+  artifactKey: Guid(be0a30396533cf34e9500009aee05b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/LA.png using Guid(be0a30396533cf34e9500009aee05b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5ddcfaa2f52e3089ce4949970d825d') in 0.021229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Europe/iceland.png
+  artifactKey: Guid(0e08c79e6f452e9419e55927b8ab9f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/iceland.png using Guid(0e08c79e6f452e9419e55927b8ab9f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6177c19b4f11ab258a0e925d464cb33c') in 0.019321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/USA States/IL.png
+  artifactKey: Guid(4ed4ff09fe3300847b9c8e6347572664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/IL.png using Guid(4ed4ff09fe3300847b9c8e6347572664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300c692e92ceba64bc770cf06990ee77') in 0.016980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/USA States/IN.png
+  artifactKey: Guid(aa976686c0ee6a34f98a271a9c5dcbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/IN.png using Guid(aa976686c0ee6a34f98a271a9c5dcbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af01b1bf9bcf233d97d03592a285cab5') in 0.018513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/GUI/green.png
+  artifactKey: Guid(1b2d300cd0a4d664099b591e393c35f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/green.png using Guid(1b2d300cd0a4d664099b591e393c35f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6eacd53702de58e73dbbc12f29bd359') in 0.034389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/USA States/GA.png
+  artifactKey: Guid(fb9aadb7257d95c41bd82a9d44a4ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/GA.png using Guid(fb9aadb7257d95c41bd82a9d44a4ceb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaddd5988932bb8b74407810a2863dc') in 0.017250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/USA States/KS.png
+  artifactKey: Guid(943fd1ba2f797734698f6d1edd454440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/KS.png using Guid(943fd1ba2f797734698f6d1edd454440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398f3a41e9790b5efc4f70c7cbfd5c15') in 0.015935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/USA States/HI.png
+  artifactKey: Guid(223c6cf0b36edf74793b71c70cb540df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/HI.png using Guid(223c6cf0b36edf74793b71c70cb540df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c051b2f7112836b0214246e53d308ae') in 0.016260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/GUI/green_clicked.png
+  artifactKey: Guid(8bd53fb6939788145a17379618c96651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/green_clicked.png using Guid(8bd53fb6939788145a17379618c96651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452a192b605acbc558a8684864176065') in 0.029444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Latin America/frenchguiana.png
+  artifactKey: Guid(066eddbef1bc5cd42ac458a7677e5d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Latin America/frenchguiana.png using Guid(066eddbef1bc5cd42ac458a7677e5d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1549165b9110f63dfbc2351314d8a132') in 0.012146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/GUI/line_horizontal.png
+  artifactKey: Guid(e1d0980882ef42240bd35c4ddd43db96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/line_horizontal.png using Guid(e1d0980882ef42240bd35c4ddd43db96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c77fd552c3e7125a804f4075b840236') in 0.011181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Europe/italy.png
+  artifactKey: Guid(84b4dab14efb75e43ba133dcb788d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/italy.png using Guid(84b4dab14efb75e43ba133dcb788d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3e8f5a2b84960b1c6fded246742d00') in 0.018387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.154137 seconds.
+  path: Assets/Sprites/Europe/lithuania.png
+  artifactKey: Guid(0ddde884c3f80a146b8c7b3087614987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/lithuania.png using Guid(0ddde884c3f80a146b8c7b3087614987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803b91c8e70d47b9e3c9d29caae05312') in 0.033353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.579585 seconds.
+  path: Assets/Sprites/USA States/MA.png
+  artifactKey: Guid(eda43fce4193bc94daa7eb31e9ed78cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/MA.png using Guid(eda43fce4193bc94daa7eb31e9ed78cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd4104ef456376ad77ca8bdd4d5f945') in 0.018538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Europe/macedonia.png
+  artifactKey: Guid(c4cca9541671dd54ea2b84c06907a912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/macedonia.png using Guid(c4cca9541671dd54ea2b84c06907a912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c0a5eb378fdae3dafacf5ee28f93ba') in 0.012109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Region Maps/MiddleEastMap.png
+  artifactKey: Guid(0f34b6f32833ae245bc7d7945a252018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Region Maps/MiddleEastMap.png using Guid(0f34b6f32833ae245bc7d7945a252018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb4463394327d19e9619e28e6ac173f') in 0.079959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.837346 seconds.
+  path: Assets/Sprites/Europe/moldova.png
+  artifactKey: Guid(6781862d911811b499c184336643e228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/moldova.png using Guid(6781862d911811b499c184336643e228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0166ced5b97c7147c76bcb80d638f4') in 0.019837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/USA States/NC.png
+  artifactKey: Guid(7e8ce16f76e23444f8dfc7c11123af04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/NC.png using Guid(7e8ce16f76e23444f8dfc7c11123af04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e79153f8eadbd462d39ee37b3a0deb') in 0.021978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/USA States/MS.png
+  artifactKey: Guid(db8b221bd1b322245b68cdde040dd734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/MS.png using Guid(db8b221bd1b322245b68cdde040dd734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5f666f5a580d1a334f424c5733caea') in 0.025099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/GUI/orange_clicked.png
+  artifactKey: Guid(d9773681a965e2e488a7f28d46effa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/orange_clicked.png using Guid(d9773681a965e2e488a7f28d46effa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b34afff4ce8642c7f54094b7d37f576') in 0.040138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/USA States/OR.png
+  artifactKey: Guid(9d8669210883ee046bc964c7d4ddd9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/OR.png using Guid(9d8669210883ee046bc964c7d4ddd9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40a0ca6b62f2f49f7e9354732dad449') in 0.022194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/GUI/orange.png
+  artifactKey: Guid(b47deabbd6ee78547bbc3125d3f42ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/orange.png using Guid(b47deabbd6ee78547bbc3125d3f42ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab87d024d6253709fe6fbc9f93a448a') in 0.035764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/USA States/RI.png
+  artifactKey: Guid(d3550c4ac9d41374b8bac9bd17891afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/RI.png using Guid(d3550c4ac9d41374b8bac9bd17891afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391421999f734b68f033d15d374e85e5') in 0.017198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/GUI/radio_unchecked.png
+  artifactKey: Guid(3766effb5b6b8454f94b084affed22f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/radio_unchecked.png using Guid(3766effb5b6b8454f94b084affed22f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aefc2cdc4ef048200393518478c9ba4') in 0.023383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/USA States/NE.png
+  artifactKey: Guid(f14ebcbeafcaedc40af92ac654265d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/NE.png using Guid(f14ebcbeafcaedc40af92ac654265d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73e403d7d1811f9391f0769aab4c440') in 0.023393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Europe/russia.png
+  artifactKey: Guid(dfaa0d1d1d97046428c415f6457352c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/russia.png using Guid(dfaa0d1d1d97046428c415f6457352c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c7890a62191bcb464e6ce504eba42d') in 0.104598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/USA States/PA.png
+  artifactKey: Guid(7f6854f20ff297541933ee10da022b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/PA.png using Guid(7f6854f20ff297541933ee10da022b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221dc8e7b3e806cfc675da2a0dddae44') in 0.021371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/USA States/NY.png
+  artifactKey: Guid(dd7225cc3d007d64da1ccdcad725aaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/NY.png using Guid(dd7225cc3d007d64da1ccdcad725aaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560ad8d52ad4bb223d81a826847319a2') in 0.034450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/USA States/OK.png
+  artifactKey: Guid(0093063759e957f4e8cb050907251d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/OK.png using Guid(0093063759e957f4e8cb050907251d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62608e750f8dc36cb010f60900b901e8') in 0.021311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/USA States/NM.png
+  artifactKey: Guid(690680a5407313343b0258aaee82522e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/NM.png using Guid(690680a5407313343b0258aaee82522e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bbd0a7f7cdb3133f9c4e519f8621be8') in 0.023213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Europe/nertherlands.png
+  artifactKey: Guid(cf9cb50b889d69a46a05bf946c8b4243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/nertherlands.png using Guid(cf9cb50b889d69a46a05bf946c8b4243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce752288f8597d9c609836c15897c222') in 0.017388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Europe/slovakia.png
+  artifactKey: Guid(01cb51731025bcb49addfcef96deaf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/slovakia.png using Guid(01cb51731025bcb49addfcef96deaf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b760c0dedf62d7551f3320b47f79cc6') in 0.017961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/GUI/square_black.png
+  artifactKey: Guid(c8208f22f9af45743b1b98045ecb2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/square_black.png using Guid(c8208f22f9af45743b1b98045ecb2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e581977b369a2a25f7e46caabaaa25f') in 0.026169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/World/world_austria.png
+  artifactKey: Guid(bd097b04dfa64b3488960efbcd2ba47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_austria.png using Guid(bd097b04dfa64b3488960efbcd2ba47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937aefaa4dc77cf384fc78a6b012e100') in 0.016763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/World/world_afghanistan.png
+  artifactKey: Guid(cbfce55e6adb7ce47aa895348b1ec1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_afghanistan.png using Guid(cbfce55e6adb7ce47aa895348b1ec1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39122c86ccfaaa5b8e0226d66884e55') in 0.025605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_angola.png
+  artifactKey: Guid(aa1f6eeb2074825418b32de30b89b50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_angola.png using Guid(aa1f6eeb2074825418b32de30b89b50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d790ce2375929772a435fe69046e17a') in 0.018664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/World/world_bangladesh.png
+  artifactKey: Guid(24708a8d9db9ece49b208ad8c477e66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_bangladesh.png using Guid(24708a8d9db9ece49b208ad8c477e66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f10d33377d347b02b1d10732c4d661e') in 0.020965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_cuba.png
+  artifactKey: Guid(2d1d1c314135f384ab7abc83e9d93c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_cuba.png using Guid(2d1d1c314135f384ab7abc83e9d93c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f751e5cb34089792c5004e0ccd6000ee') in 0.025107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/GUI/square_green_clicked.png
+  artifactKey: Guid(f06f7d517a2c3f8439ab49d280ff785f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/square_green_clicked.png using Guid(f06f7d517a2c3f8439ab49d280ff785f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96acc6b31002e8a7a6c24aecbdc77ea') in 0.025618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/World/world_bhutan.png
+  artifactKey: Guid(778ea189f6ebc2f4e93438abb59bc6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_bhutan.png using Guid(778ea189f6ebc2f4e93438abb59bc6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c608578ac0ba122724c96ea5e6feb6e3') in 0.018215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/World/world_ethiopia.png
+  artifactKey: Guid(ab38087b08f216845a32bf1ff99c78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_ethiopia.png using Guid(ab38087b08f216845a32bf1ff99c78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d2224974e881bc41baffd0921f4e0f') in 0.021942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/GUI/square_red.png
+  artifactKey: Guid(a3b984e0d312cbe4b9e5c9e73715e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/square_red.png using Guid(a3b984e0d312cbe4b9e5c9e73715e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e985cdc1a202f030eb3967968c2095') in 0.029179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/World/world_equatorialguinea.png
+  artifactKey: Guid(96afacf0aa49e934ea32efb9629353e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_equatorialguinea.png using Guid(96afacf0aa49e934ea32efb9629353e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15bf6b2ccd4cbb0585e78f85641b0cf') in 0.015209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_china.png
+  artifactKey: Guid(9ed863f989cec584f9276397cc804fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_china.png using Guid(9ed863f989cec584f9276397cc804fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3064464631227ea3ff573f8e08097aa0') in 0.098800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Sprites/GUI/square_green.png
+  artifactKey: Guid(8d40f44c1a963b84086394924478aaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/square_green.png using Guid(8d40f44c1a963b84086394924478aaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d186ddcf8b841a7502709436ebe4eeb') in 0.024629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/World/world_argentina.png
+  artifactKey: Guid(633ffdd6b5e0c774aaaccfa9acbb5407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_argentina.png using Guid(633ffdd6b5e0c774aaaccfa9acbb5407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06760a9812accc38df4265d8bd9f5af') in 0.035410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/World/world_cotedlvoire.png
+  artifactKey: Guid(6e76c38c91799d14e9ec201deb117fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_cotedlvoire.png using Guid(6e76c38c91799d14e9ec201deb117fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f37679e79851ec3acbce8207bcfbff') in 0.023224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Europe/ukraine.png
+  artifactKey: Guid(e287852c224708545a1441967310f999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/ukraine.png using Guid(e287852c224708545a1441967310f999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2ba35ec362b28e1384c0713941b7d0') in 0.044478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/World/world_brazil.png
+  artifactKey: Guid(98c44c372a8432f4a9c9e5d4d2e10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_brazil.png using Guid(98c44c372a8432f4a9c9e5d4d2e10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e730ef8891b96b6ee2f190d877ae1089') in 0.086134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/USA States/TX.png
+  artifactKey: Guid(1b71b40eca4f8874bb57e8e206205c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/TX.png using Guid(1b71b40eca4f8874bb57e8e206205c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628963b07af729466fed8b930cd633af') in 0.037863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/World/world_dominicanrepublic.png
+  artifactKey: Guid(ddc82e9a3ead18a4884c1c9a50bc873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_dominicanrepublic.png using Guid(ddc82e9a3ead18a4884c1c9a50bc873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ceaee0392db088350b9b97384a8687') in 0.016368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/GUI/switch_off.png
+  artifactKey: Guid(131c6922da040b943894b7c94e191c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/switch_off.png using Guid(131c6922da040b943894b7c94e191c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f5fa65b5d9e8a6862decf622ce911d') in 0.033031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/World/world_guatemala.png
+  artifactKey: Guid(53eb651d046e0d04eac191b52f1626fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_guatemala.png using Guid(53eb651d046e0d04eac191b52f1626fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c93bb7d91a389fa21c3f43828bee97') in 0.016899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_newzealand.png
+  artifactKey: Guid(52c50bb0e0dde3b469add25bae97ebb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_newzealand.png using Guid(52c50bb0e0dde3b469add25bae97ebb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8cb5a827c0ed567d63991a1315d8ed6') in 0.023502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/World/world_mongolia.png
+  artifactKey: Guid(130eb1109351cdb45907915d12276460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_mongolia.png using Guid(130eb1109351cdb45907915d12276460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5c7999317d1bc889effaf9f21edb33') in 0.036665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/World/world_mozambique.png
+  artifactKey: Guid(fa200401b40be764e93a686305c83a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_mozambique.png using Guid(fa200401b40be764e93a686305c83a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a5916678cb12ba1b217983797d38d3') in 0.022623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/World/world_peru.png
+  artifactKey: Guid(c39d1f9637ee1a744860d30b2dcd1f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_peru.png using Guid(c39d1f9637ee1a744860d30b2dcd1f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3c733d56bb3186afb60dee3668a2a4') in 0.021555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/World/world_lithuania.png
+  artifactKey: Guid(13e7ce21034284747b1b6ec1c3f21f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_lithuania.png using Guid(13e7ce21034284747b1b6ec1c3f21f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4125c07c6ae9322f5aac351a97570b29') in 0.020384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/World/world_rwanda.png
+  artifactKey: Guid(0c01e404406d7c74c9d210437e47f7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_rwanda.png using Guid(0c01e404406d7c74c9d210437e47f7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ce99fb95ee32e4ea5683782fd19942') in 0.013584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/World/world_southafrica.png
+  artifactKey: Guid(a9413bc4735935e4f8d97c96b0b885f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_southafrica.png using Guid(a9413bc4735935e4f8d97c96b0b885f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b20e0cc99abe158ee810be945e921f') in 0.022534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/World/world_poland.png
+  artifactKey: Guid(9fc11ee3e9f94a94b8c07415920564d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_poland.png using Guid(9fc11ee3e9f94a94b8c07415920564d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab48547c903547eec736127b11beab45') in 0.015537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_malawi.png
+  artifactKey: Guid(20efab5150ca26c45bed87b67d5f29f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_malawi.png using Guid(20efab5150ca26c45bed87b67d5f29f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc661dc9bd7d997f37c22399ec563d80') in 0.015067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprites/World/world_swaziland.png
+  artifactKey: Guid(2a1e19df76a35c74cadf0d6bc39cbf9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_swaziland.png using Guid(2a1e19df76a35c74cadf0d6bc39cbf9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d7552c45215e7d5b807f4d10971170') in 0.015482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/World/world_sweden.png
+  artifactKey: Guid(dadd1b939664d334c8c5d7bc8f7bac0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_sweden.png using Guid(dadd1b939664d334c8c5d7bc8f7bac0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3862b2f4c0e47d052847942e9fc4b2d4') in 0.022560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_paraguay.png
+  artifactKey: Guid(1019d236c82b30c44bbd972a2465656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_paraguay.png using Guid(1019d236c82b30c44bbd972a2465656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdee1f31cff37ecf58ebbbe9a5df6855') in 0.022929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/World/world_germany.png
+  artifactKey: Guid(46f490932df17b34ca948133802c3ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_germany.png using Guid(46f490932df17b34ca948133802c3ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2ab1636ab1a3c04b20a1c6d2084d14') in 0.017869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/World/world_saudiarabia.png
+  artifactKey: Guid(211b7ed1c098ecf4396ff7691c8c0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_saudiarabia.png using Guid(211b7ed1c098ecf4396ff7691c8c0cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cffc8d71192644d93d278f496496a2') in 0.019759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/World/world_honduras.png
+  artifactKey: Guid(92343a3877384cb409d07c163c24f0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_honduras.png using Guid(92343a3877384cb409d07c163c24f0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fb7386ffe25fc115ba7bae9e6c2446') in 0.020194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_bulgaria.png
+  artifactKey: Guid(fa912424316b2624ebc3545818f546ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_bulgaria.png using Guid(fa912424316b2624ebc3545818f546ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd5377f50e406d85c09bc67f7badafc') in 0.031870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/World/world_democraticrepublicofcongo.png
+  artifactKey: Guid(f970fa2452ced4448bda9bece3e86379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_democraticrepublicofcongo.png using Guid(f970fa2452ced4448bda9bece3e86379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc09254128ce597e4ef8d4659c6afe58') in 0.023210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/World/world_nicaragua.png
+  artifactKey: Guid(ff14bba3fae6c0d449e909e3ed4e8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_nicaragua.png using Guid(ff14bba3fae6c0d449e909e3ed4e8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4849358e70745138e3bd38ad341e9c42') in 0.018335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/World/world_kazakhstan.png
+  artifactKey: Guid(d0f9562b16a27364d92673beb67a1838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_kazakhstan.png using Guid(d0f9562b16a27364d92673beb67a1838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e70345fe8cd55e599ece64b2f18557') in 0.033956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/World/world_pakistan.png
+  artifactKey: Guid(27d427436e9562047bb333f348b51f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_pakistan.png using Guid(27d427436e9562047bb333f348b51f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c35751affb1bd73040817b50b4b80e') in 0.021847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/World/world_lebanon.png
+  artifactKey: Guid(a3479574d7d555145839a8205fe36656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_lebanon.png using Guid(a3479574d7d555145839a8205fe36656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35b8518c7c7787bff14394d4bf6240b') in 0.017021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/USA States/VA.png
+  artifactKey: Guid(94b38ce84c08734429a122e486dd205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/VA.png using Guid(94b38ce84c08734429a122e486dd205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90dc088e7f3d2a3a240e23bf136eb8c') in 0.022340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Europe/spain.png
+  artifactKey: Guid(644f3d4a394d4ec4f88f92482eb61f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Europe/spain.png using Guid(644f3d4a394d4ec4f88f92482eb61f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15dd1e87b94c0250f1bad9ecf04b84db') in 0.024004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/World/world_croatia.png
+  artifactKey: Guid(874252287d730d045938bdefacc18ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_croatia.png using Guid(874252287d730d045938bdefacc18ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5102a5e2fbfda33b59a522f793884564') in 0.020636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/World/world_switzerland.png
+  artifactKey: Guid(a35905ccbc472d547b83bb56cc592a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_switzerland.png using Guid(a35905ccbc472d547b83bb56cc592a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0ca2f798796e947a45cfc85cfc02f0') in 0.015474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/World/world_bolivia.png
+  artifactKey: Guid(38008114c636b08429ed5b39303a6aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_bolivia.png using Guid(38008114c636b08429ed5b39303a6aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef77d49bd056bf72f8b02de4506b1f4') in 0.021669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/World/world_phillipines.png
+  artifactKey: Guid(df15790a2065272468990a65a004c032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_phillipines.png using Guid(df15790a2065272468990a65a004c032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388a4d9528b961d61957212b0aa702bf') in 0.023782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_egypt.png
+  artifactKey: Guid(ab3ac7f765ef1f549b4b1e10976fbded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_egypt.png using Guid(ab3ac7f765ef1f549b4b1e10976fbded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a418390c7eb2abd37da99c24e4ee5f') in 0.019666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/GUI/switch_on.png
+  artifactKey: Guid(9f869276e3e958c45b9a467bccfca2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/switch_on.png using Guid(9f869276e3e958c45b9a467bccfca2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8503949c1ad568b2d0ec5de0b5d82d') in 0.029541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/World/world_cambodia.png
+  artifactKey: Guid(da1560112857a024dbbb7418403240c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_cambodia.png using Guid(da1560112857a024dbbb7418403240c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e596c900ca1486177b27fe2ffb9dbf') in 0.021805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/World/world_norway.png
+  artifactKey: Guid(16734b8351809684a8a608e3a702acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_norway.png using Guid(16734b8351809684a8a608e3a702acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81735886f5277050f3b7dc7dec36dbf') in 0.022383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/World/World Map.png
+  artifactKey: Guid(60b312b22093a3e43b3f2e6c7018879d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/World Map.png using Guid(60b312b22093a3e43b3f2e6c7018879d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc6d8a1e61a18e421d807a86e52c569') in 0.209176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/World/world_srilanka.png
+  artifactKey: Guid(f456b5fbbf6541b469c62468b4f84824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_srilanka.png using Guid(f456b5fbbf6541b469c62468b4f84824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e982034ffb2490e09bc4a3e7045114') in 0.014268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Sprites/World/world_newcaledonia.png
+  artifactKey: Guid(d166c5d1e322061459ea4220aef3ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_newcaledonia.png using Guid(d166c5d1e322061459ea4220aef3ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502a3aef8268b81ffe6d4bbbcbc36c87') in 0.018903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/World/world_republicofcongo.png
+  artifactKey: Guid(c3764ab01c5894f409829df6cbf437d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_republicofcongo.png using Guid(c3764ab01c5894f409829df6cbf437d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526f9dc221bfe5ec0e6f4657a69eca9c') in 0.017377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/World/world_serbia.png
+  artifactKey: Guid(e1aa93317e9b1994cb55682326e214d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_serbia.png using Guid(e1aa93317e9b1994cb55682326e214d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7831f190af03960c1fc9220c589c067') in 0.024195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/World/world_kyrgyzstan.png
+  artifactKey: Guid(7eb427fccb2a66d46a857948bc0f961f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_kyrgyzstan.png using Guid(7eb427fccb2a66d46a857948bc0f961f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf05977132d8aa670413fc72fce183a') in 0.019053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/World/world_sudan.png
+  artifactKey: Guid(18d391bba9dc88545b19f1010897b7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_sudan.png using Guid(18d391bba9dc88545b19f1010897b7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989ae3b5cccb9594269162f777290917') in 0.022232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_malaysia.png
+  artifactKey: Guid(fa38d92c5993c2d4ebddead56bb07699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_malaysia.png using Guid(fa38d92c5993c2d4ebddead56bb07699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aec8140d902bd8895a04ec4c76cbb99') in 0.025710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/World/world_georgia.png
+  artifactKey: Guid(19a545aa36a98c94ab42c7e7f15a7ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_georgia.png using Guid(19a545aa36a98c94ab42c7e7f15a7ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4665e5cefecf63c04d43d5b0217cf06a') in 0.017049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_mauritania.png
+  artifactKey: Guid(aa1fcf8dddf77a541b59c4120cfb4dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_mauritania.png using Guid(aa1fcf8dddf77a541b59c4120cfb4dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1172f0e954017aebea01156c1e923d') in 0.020755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/World/world_indonesia.png
+  artifactKey: Guid(3896186838111c14388560250e294f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_indonesia.png using Guid(3896186838111c14388560250e294f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c4ce400eb321608f4c6abb21546518') in 0.099974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/World/world_southsudan.png
+  artifactKey: Guid(0e89c9e387e2b4b40ac0bb370e1c776b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_southsudan.png using Guid(0e89c9e387e2b4b40ac0bb370e1c776b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a0abc3bf11f86a83e3ea32356c144a') in 0.015222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/World/world_france.png
+  artifactKey: Guid(de0d7ad97f7b51247981cc46a5d49666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_france.png using Guid(de0d7ad97f7b51247981cc46a5d49666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e6dcf598946add1086e2c56e8dc565') in 0.021847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/World/world_senegal.png
+  artifactKey: Guid(1b3021cb7b8ce024c80d4320d4cca1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_senegal.png using Guid(1b3021cb7b8ce024c80d4320d4cca1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332211a2970106faa91ff128cd69c822') in 0.018844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/World/world_gabon.png
+  artifactKey: Guid(2aef4970e35986f4f897fff1259485d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_gabon.png using Guid(2aef4970e35986f4f897fff1259485d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8789d14c7a502f4283b05b72efc7d582') in 0.018193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/World/world_suriname.png
+  artifactKey: Guid(c1e4858d8012e044b9b67d4c1ec3269f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_suriname.png using Guid(c1e4858d8012e044b9b67d4c1ec3269f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57edff9ef87a9cacbc0554322a848ae8') in 0.015675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/World/world_moldova.png
+  artifactKey: Guid(ebbe035fb143b9c4994db73708730aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_moldova.png using Guid(ebbe035fb143b9c4994db73708730aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a339d98124154143718ccd877e211aec') in 0.023868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/World/world_iceland.png
+  artifactKey: Guid(26f87db011b459445b2c947b877e76ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_iceland.png using Guid(26f87db011b459445b2c947b877e76ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69037f7d059fae8404030c35ea5b2d2') in 0.018773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/World/world_somalia.png
+  artifactKey: Guid(620109d1ba3fb3244b068ec26569d19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_somalia.png using Guid(620109d1ba3fb3244b068ec26569d19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b74e89996cf53b1e0c38b9784340cc6') in 0.022409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/World/world_belize.png
+  artifactKey: Guid(f00ff8cc7c61c7e42997f46e3f259910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_belize.png using Guid(f00ff8cc7c61c7e42997f46e3f259910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12214fabe87a0083379828cfed4a2be') in 0.025979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/World/world_dijibouti.png
+  artifactKey: Guid(49216bad8e326dc41b43adc0dd96d76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_dijibouti.png using Guid(49216bad8e326dc41b43adc0dd96d76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5eb1966eb4d59f1b8d6791b541a3598') in 0.021563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/USA States/USA State Map.png
+  artifactKey: Guid(fa3cd9eccd92a6d44a0aa8d00e7172a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/USA State Map.png using Guid(fa3cd9eccd92a6d44a0aa8d00e7172a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3d91e21aa39fe5387adfb55d1597ef') in 0.081587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/USA States/TN.png
+  artifactKey: Guid(20d1f42a40ffb3447b3f415a8578a75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/USA States/TN.png using Guid(20d1f42a40ffb3447b3f415a8578a75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422452590b37bd061e8f8a58f725964a') in 0.020614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Sprites/World/world_ghana.png
+  artifactKey: Guid(0991f2de5877b8a418c99c37a8f86493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_ghana.png using Guid(0991f2de5877b8a418c99c37a8f86493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce3def26acd3ef043a4b2f7645ed37c') in 0.023549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/GUI/square_red_clicked.png
+  artifactKey: Guid(144579a67c1b50840906ef77bf87b073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GUI/square_red_clicked.png using Guid(144579a67c1b50840906ef77bf87b073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7067694d142b60134d207bbd311837ea') in 0.027599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/World/world_algeria.png
+  artifactKey: Guid(ef2d8acef0ea6c64cb78b15acd6a22ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_algeria.png using Guid(ef2d8acef0ea6c64cb78b15acd6a22ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68260c99ca8d225d00eb2e36ba5c182') in 0.021291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_madagascar.png
+  artifactKey: Guid(b17290dcc7f329648a909ccd5cbce2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_madagascar.png using Guid(b17290dcc7f329648a909ccd5cbce2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c070288a27217759b8e5f936612492f4') in 0.022242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/World/world_slovakia.png
+  artifactKey: Guid(2521119a7cfb033489a29e8e1216fab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_slovakia.png using Guid(2521119a7cfb033489a29e8e1216fab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3fb11272ef5450d1547bb090b8e6af8') in 0.014022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/World/world_armenia.png
+  artifactKey: Guid(bdd0c1164fabd7044b4ed1901afdefde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_armenia.png using Guid(bdd0c1164fabd7044b4ed1901afdefde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7356bec810b0fa843b930babc4245c6') in 0.017348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/World/world_benin.png
+  artifactKey: Guid(1cd8eaa06f22c4749845c3c3e8291584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/World/world_benin.png using Guid(1cd8eaa06f22c4749845c3c3e8291584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5952ec79578c827236d9e5272bcd58') in 0.021360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 155.700524 seconds.
+  path: Packages/com.unity.purchasing/Icons/LinkWhite.png
+  artifactKey: Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.purchasing/Icons/LinkWhite.png using Guid(e679a29ca22bc4fa0bd848bd79a42b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0456b64a250e2625842cc3339f32a582') in 0.011380 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 9.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (22.9 KB). Loaded Objects now: 4369.
+Memory consumption went from 59.2 MB to 59.2 MB.
+Total: 8.834000 ms (FindLiveObjects: 0.523600 ms CreateObjectMapping: 0.479800 ms MarkObjects: 7.775700 ms  DeleteObjects: 0.053600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
